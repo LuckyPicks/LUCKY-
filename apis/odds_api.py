@@ -2,7 +2,7 @@ import requests
 
 API_KEY = "cfae3c955efd39b619bec6fee8945580"
 
-def fetch_nba_odds():
+def fetch_nba_props():
 
     url = "https://api.the-odds-api.com/v4/sports/basketball_nba/odds"
 
