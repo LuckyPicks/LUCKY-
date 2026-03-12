@@ -14,4 +14,4 @@ async def on_ready():
 async def test(ctx):
     await ctx.send("✅ LuckyPicks bot is working!")
 
-client.run(os.getenv("DISCORD_TOKEN"))
+client.run(os.getenv("DISCORD_TOKEN")))
