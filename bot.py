@@ -22,5 +22,15 @@ async def on_ready():
     print("LuckyPicks Bot Online")
 
     asyncio.create_task(start_scanner())
+@client.command()
+async def scan(ctx):
+    await ctx.send("🔍 Running manual scan...")
 
+    # start a quick scan
+    asyncio.create_task(start_scanner())
+
+    await ctx.send("✅ Scan started!")
+    @client.command()
+async def test(ctx):
+    await ctx.send("✅ LuckyPicks bot is working!")
 client.run(os.getenv("DISCORD_TOKEN"))
